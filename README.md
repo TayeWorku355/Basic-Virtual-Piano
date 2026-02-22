@@ -2,15 +2,28 @@
 
 A basic virtual piano you can play in your browser.
 
-## Run
+## How to preview this output
 
-Open `index.html` directly in a browser, or run a local server:
+### Option 1 (quickest)
+- Double-click `index.html` to open it directly in your browser.
+
+### Option 2 (recommended local preview server)
+Run:
 
 ```bash
-python3 -m http.server 8000
+./start_preview.sh
 ```
 
-Then visit `http://localhost:8000`.
+Then open either:
+- `http://localhost:8000/index.html`
+- `http://localhost:8000/preview.html`
+
+You can also choose a custom port:
+
+```bash
+./start_preview.sh 9000
+```
+
 
 ## Preview
 
@@ -19,10 +32,7 @@ If your environment says **"preview not found"**, open one of these directly:
 - `index.html`
 - `preview.html`
 
-Or run the local server command above and visit:
-
-- `http://localhost:8000/index.html`
-- `http://localhost:8000/preview.html`
+If you still see **"preview not found"**, use the local server URLs above explicitly.
 
 ## Controls
 
